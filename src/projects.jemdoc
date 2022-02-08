@@ -1,0 +1,22 @@
+# jemdoc: menu{MENU}{projects.html}
+= Projects
+
+== Industry Projects
+
+*AlphaRTC - RL-based Network Bandwidth Prediction in Real-time Communication*\n
+- A part of my work during the internship at Microsoft Research Asia
+- Challenges: Model's poor adaptability to different scenarios.\n
+- My Contributions:\n
+    -- 1. Added supervised information into RL: Proposed unified reward function\n
+and classification loss to improve model performance in multiple scenarios.\n
+    -- 2. Improved model's performance by 72\% in ISP scenario, 55\% in Burst Loss scenario.\n
+
+*Cold Page Reclaim & Oversubscription Algorithm on Cloud Container Platform*\n
+- A part of my work during the internship at Alibaba Group
+- Challenges: Improve memory utilization in datacenter without undermining Latency-sensitive services' quality of service.\n
+- My Contributions:\n
+    -- To be updated......\n
+
+== Research Projects
+
+To be updated......
