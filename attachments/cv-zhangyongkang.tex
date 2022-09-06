@@ -1,0 +1,241 @@
+%!TeX program = pdflatex
+% Geoff Boeing's Curriculum Vitae
+% Email: boeing@usc.edu
+% Web: https://geoffboeing.com/
+% Repo: https://github.com/gboeing/cv
+
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
+\usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
+\usepackage[USenglish]{babel} % regionalize hyphens, quote marks, etc automatically
+\usepackage{microtype}% improve text appearance with kerning, etc
+\usepackage{datetime} % enable formatting of date output
+\usepackage{tabto}    % make nice tabbing
+\usepackage{hyperref} % enable hyperlinks and pdf metadata
+\usepackage{geometry} % manually set page margins
+\usepackage{enumitem} % enumerate with [resume] option
+\usepackage{titlesec} % allow custom section fonts
+\usepackage{setspace} % custom line spacing
+\usepackage{newtxtext}
+\usepackage{titlesec}
+
+% what is your name?
+\newcommand{\myname}{ZHANG, Yongkang}
+
+% select default typefaces
+\usepackage{ebgaramond} % document's serif typeface
+\usepackage{helvet}     % document's sans serif typeface
+
+% how far to tab for list items with left-aligned date: different fonts need different widths
+\newcommand{\listtabwidth}{1.7cm}
+
+% define font to use as document's title
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+% set section heading fonts and before/after spacing
+\SetTracking{encoding=*, family=\sfdefault}{30} % increase sans serif headings tracking
+\titleformat{\section}{\lsstyle\sffamily\small\bfseries\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{30pt plus 4pt minus 4pt}{8pt plus 2pt minus 2pt}
+
+% set subsection heading fonts and before/after spacing
+\titleformat{\subsection}{\lsstyle\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{16pt plus 4pt minus 4pt}{4pt plus 2pt minus 2pt}
+
+% set page margins (assumes letter paper)
+\geometry{body={6.5in, 9.0in},
+    left=1.0in,
+    top=1.0in}
+
+% prevent paragraph indentation
+\setlength\parindent{0em}
+
+% set line spacing
+\setstretch{0.9}
+
+% define space between list items
+\newcommand{\listitemspace}{0.25em}
+
+% make unordered lists without bullets and use compact spacing
+\renewenvironment{itemize}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+                \setlength{\parskip}{0em}
+                \setlength{\itemsep}{\listitemspace}
+                \setlength{\parsep}{\listitemspace}}}
+{\end{list}}
+
+% make tabbed lists so content is left-aligned next to years
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+    labelindent=0em,
+    topsep=0em,
+    partopsep=0em,
+    itemsep=\listitemspace,
+    parsep=\listitemspace,
+    font=\normalfont}
+
+% print only the month and year when using \today
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+% define hyperlink appearance and metadata for pdf properties
+\hypersetup{
+    colorlinks  = true,
+    urlcolor    = black,
+    citecolor   = black,
+    linkcolor   = black,
+    pdfauthor   = {\myname},
+    pdfkeywords = {city planning, housing, street networks, transportation, urban design, urban informatics},
+    pdftitle    = {\myname: Curriculum Vitae},
+    pdfsubject  = {Curriculum Vitae},
+    pdfpagemode = UseNone
+}
+
+\titleformat{\section}
+{\lsstyle\sffamily\small\bfseries\uppercase}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\begin{document}
+    \raggedright{}
+
+    % display your name as the document title
+    \namefont{\myname} \hfill{(\textit{Last updated on: Sept. 6th, 2022})}
+
+    % affiliation and contact info blocks
+    \vspace{1em}
+    \begin{minipage}[t]{0.700\textwidth}
+        % current primary affiliation, left-aligned
+        Department of Computer Science and Engineering \\
+        Hong Kong University of Science and Technology \\
+        Clear Water Bay, Hong Kong S.A.R., China
+    \end{minipage}	
+    \begin{minipage}[t]{0.2\textwidth}
+        % contact info details, right-aligned
+        %\flushright{}
+        \href{mailto:yzhangne@cse.ust.hk}{yzhangne@cse.ust.hk} \\
+        +86 15337296679 \\
+        \href{https://ykzhang1999.github.io/}{https://ykzhang1999.github.io/}
+    \end{minipage}
+
+\section*{Research Areas}
+
+\begin{itemize}
+	
+	\item \textbf{Areas:} Cloud Computing; Containers; Resource Management.
+	\item \textbf{Focus:} Achieve balance between resource efficiency and high quality-of-service in large-scale data centers.
+	
+\end{itemize}
+
+
+\section*{Education}
+
+\textbf{Hong Kong University of Science and Technology} \hfill {Hong Kong S.A.R., China}\\
+Ph.D. in Computer Science and Engineering \hfill {Sep. 2021 - Present}\\
+GPA: 3.77 / 4.30; HKPFS Awardee\\
+Thesis Supervisor: Prof. WANG, Wei and Prof. CHU, Xiaowen
+
+\vspace{0.5em}
+\textbf{Wuhan University} \hfill {Wuhan, Hubei, China}\\
+B.Eng. in Computer Science and Technology \hfill {Sep. 2017 - Jun. 2021}\\
+GPA: 3.98 / 4.00; GPA Ranking: 2 / 334; Excellent Undergraduate Thesis\\
+Thesis: Idle Memory Reclamation and Overcommitment on Cloud\\
+Thesis Supervisor: Prof. ZHANG, Huyin
+
+\section*{Industrial Experience}
+
+\textbf{Alibaba Group} \hfill {Hangzhou, Zhejiang, China}\\
+Visiting Student of Cluster Management Group, CTO Line \hfill {Feb. 2022 - Present}\\
+Mentor: HE, Jian
+
+\textbf{Alibaba Cloud} \hfill {Hangzhou, Zhejiang, China}\\
+Research Intern of Cluster Management Group, Cloud Native Division \hfill {Oct. 2020 - Jul. 2021}\\
+Mentor: HE, Jian
+
+\vspace{0.5em}
+\textbf{Microsoft Research Asia} \hfill {Beijing, China}\\
+Research Intern of Networking Research Group \hfill {Jul. 2020 - Oct. 2020}\\
+Mentor: Dr. CHENG, Wenxue and Dr. CHENG, Peng
+
+
+    \section*{Publications}
+
+    %\subsection*{Journal Articles}
+
+    %\begin{tablist}
+
+    %    \item[2021] \tab{}Boeing, G. \enquote{Street Network Models and Indicators for Every Urban Area in the World.} \textit{Geographical Analysis}, published online ahead of print. \href{https://doi.org/10.1111/gean.12281}{doi:10.1111/gean.12281}
+   % \end{tablist}
+
+    \subsection*{Conferences}
+
+    \begin{tablist}
+
+        \item[2022] \tab{} \underline{\textbf{Yongkang Zhang}}, Yinghao Yu, Wei Wang, Qiukai Chen, Jie Wu, Zuowei Zhang, Jiang Zhong, Tianchen Ding, Qizhen Weng, Lingyun Yang, Cheng Wang, Jian He, Guodong Yang, and Liping Zhang, ``Workload Management in Alibaba Clusters: The Good, the Bad, and the Ugly,'' accepted to appear in \textit{the Proceedings of ACM Symposium on Cloud Computing} (\textit{\textbf{SoCC '22}}), San Francisco, CA, November 2022.
+    \end{tablist}
+
+\section*{Projects}
+
+\textbf{Idle Memory Reclamation and Overcommitment on Cloud Container Platform}\\
+A part of my work during the internship at Alibaba Group.\\
+Challenges: Improve memory utilization in datacenter without undermining latency-sensitive services' quality of service.\\
+My Contributions:\\
+1. Developed the memory pressure detector in Alibaba's container management system.\\
+2. Leveraged \textit{Memory Pressure Stall Information} to detect memory pressure brought by memory overcommitment.\\
+3. Improved the memory utilization by around 10\% in multiple data centers without impacting the CPI of latency-sensitive services.
+
+\vspace{0.5em}
+\textbf{AlphaRTC (Reinforcement-learning-based Network Bandwidth Prediction in Real-time Communication)}\\
+A part of my work during the internship at Microsoft Research Asia\\
+Challenges: RL model's poor adaptability to different scenarios.\\
+My Contributions:\\
+1. Added supervised information into RL: Proposed unified reward function and classification loss to improve model performance in multiple scenarios.\\
+2. Improved model's performance by 72\% in ISP scenario, 55\% in Burst Loss scenario.
+
+\section*{Skills}
+
+\subsection*{Language}
+
+Chinese - Mandarin (Mother tongue); English (TOEFL: 113 / 120; CET-6: 683 / 710).
+
+\vspace{-0.5em}
+\subsection*{Programming}
+
+C++ / C, Go, Python, Java, Verilog HDL, Tensorflow, PyTorch
+
+\vspace{-0.5em}
+\subsection*{Others}
+
+LaTeX
+
+\section*{Awards}
+
+\subsection*{Awards Obtained in the Ph.D. Program}
+
+RedBird Ph.D. Scholarship, School of Engineering, HKUST \hfill{2021}
+
+Hong Kong Ph.D. Fellowship (\textit{Only 300 Awardees in HK}), University Grant Council \hfill{2021 - 2025}
+
+\vspace{-0.5em}
+\subsection*{Awards Obtained in the Undergraduate Program}
+
+Excellent Undergraduate Thesis, Wuhan University \hfill{2021}
+
+Sensetime Scholarship (Runner-up), Sensetime Group \hfill{2019}
+
+National Scholarship, The Ministry of Education \hfill{2018}
+
+The First Class Scholarship, Wuhan University \hfill{2018}
+
+\vspace{-0.5em}
+\subsection*{Awards Obtained in Olympiad in Informatics (Organized by China Computer Federation)}
+
+Silver Medal, China Team Selection Competition \hfill{2016}
+
+Silver Medal, Winter Camp of National Olympiad in Informatics \hfill{2016}
+
+Bronze Medal, National Olympiad in Informatics  \hfill{2016}
+
+Bronze Medal, Asia-Pacific Informatics Olympiad (China District) \hfill{2015 \& 2016}
+
+First Prize, National Olympiad in Informatics in Provinces  \hfill{2014 \& 2015}
+
+\end{document}

@@ -8,19 +8,32 @@ Room 3007, Cheng Yu Tung Building, HKUST\n
 Clear Water Bay, Sai Kung District\n
 Hong Kong S.A.R., P.R. China \n 
 E-mail: /yongkang.zhang/ \[@\] connect \[DOT\] ust \[DOT\] hk\n
-\[Resume\] \[[https://www.linkedin.cn/injobs/in/yongkang-zhang-4a5582192 Linkedin]\]
+\[[./attachments/cv-zhangyongkang.pdf Resume]\] \[Google Scholar\] \[DBLP\] \[[https://orcid.org/0000-0002-4745-3176 ORCID]\] \[[https://www.linkedin.cn/injobs/in/yongkang-zhang-4a5582192 Linkedin]\]
+~~~
+
+== News
+
+~~~
+- *\[2022.09.06\]* One first-author paper accepted by *ACM SoCC 2022*!
 ~~~
 
 == Education
 - 2021 - Now, Ph.D. in Computer Science and Engineering, The Hong Kong University of Science and Technology, Hong Kong S.A.R., P.R. China
-    -- Supervisor: [https://cse.hkust.edu.hk/~weiwa/ Prof. WANG, Wei]
+    -- Supervisor: [https://cse.hkust.edu.hk/~weiwa/ Prof. WANG, Wei] ([https://cse.hkust.edu.hk CSE @ Clear Water Bay Campus]) and [https://sites.google.com/view/chuxiaowen Prof. CHU, Xiaowen] ([https://infh.hkust-gz.edu.cn/en/academics/dsa DSA @ Guangzhou Campus])
     -- Research Interests: Cloud Computing
-    -- CGA: 3.75 / 4.3
+    -- CGA: 3.77 / 4.3; *HKPFS Awardee*
 
 - 2017 - 2021, B.Eng. in Computer Science and Technology, Wuhan University, Wuhan, Hubei Province, P.R. China
     -- GPA: 3.98 \/ 4.0 (Ranking: 2 \/ 336)
     -- Ranking 1/336 in 1st and 3rd school year's academic score.
-    -- Thesis: Cold Memory Page Oversubscription Strategy in Cloud Container Platform (Excellent Undergraduate Thesis)
+    -- Thesis: Idle Memory Page Reclamation and Overcommitment on Cloud Container Platforms *(Excellent Undergraduate Thesis)*
+
+== Selected Publications ([./publications.html Full List])
+
+=== Conferences
+
+_*Yongkang Zhang*_, Yinghao Yu, Wei Wang, Qiukai Chen, Jie Wu, Zuowei Zhang, Jiang Zhong, Tianchen Ding, Qizhen Weng, Lingyun Yang, Cheng Wang, Jian He, Guodong Yang, and Liping Zhang, 
+‘‘Workload Management in Alibaba Clusters: The Good, the Bad, and the Ugly,’’ accepted to appear in /the Proceedings of ACM Symposium on Cloud Computing/ (/*SoCC '22*/), San Francisco, CA, November 2022.
 
 == Professional Experiences
 ~~~
